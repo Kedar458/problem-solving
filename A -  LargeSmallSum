@@ -1,0 +1,17 @@
+def array():
+    arr=list(map(int,input().split()))
+    b=[]
+    c=[]
+    if len(arr)<0 or len(arr)<=3:
+        return 0
+    for i in range(len(arr)):
+             if i%2==0:
+                b.append(arr[i])
+             else:
+                c.append(arr[i])
+    b.sort()
+    c.sort()
+    print(b[1]+c[-2])
+result=array()
+print(result)
+    
