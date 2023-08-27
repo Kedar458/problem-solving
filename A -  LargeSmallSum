@@ -11,7 +11,7 @@ def array():
                 c.append(arr[i])
     b.sort()
     c.sort()
-    print(b[1]+c[-2])
+    print(b[-2]+c[1])
 result=array()
 print(result)
     
