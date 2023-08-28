@@ -1,0 +1,12 @@
+def hyphen():
+    arr = input()
+    count=0
+    b=""
+    for i in ((arr)):
+        if i == '-':
+            count=count+1
+        else:
+            b+=i
+    print('-'*count,b)
+result = hyphen()
+print(result)
