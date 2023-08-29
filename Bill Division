@@ -1,0 +1,27 @@
+#!/bin/python3
+
+import math
+import os
+import random
+import re
+import sys
+
+#
+# Complete the 'bonAppetit' function below.
+#
+# The function accepts following parameters:
+#  1. INTEGER_ARRAY bill
+#  2. INTEGER k
+#  3. INTEGER b
+#
+
+n,k=list(map(int,input().split()))
+arr=list(map(int,input().split()))
+a=int(input())
+
+share=(sum(arr)-(arr[k]))/2
+if(a>share)        :
+    print (int(a-share) )
+else:
+   
+    print("Bon Appetit")
