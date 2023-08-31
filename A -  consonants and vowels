@@ -1,0 +1,9 @@
+st=str(input())
+vow = "aeiou"
+cost = 0
+for i in range(len(st)):
+    costs = []
+    for j in range(5):
+        costs.append(abs(ord(st[i])-ord(vow[j])))
+    cost += min(costs)
+print(cost)
