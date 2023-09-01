@@ -1,0 +1,20 @@
+# Python3 implementation to print the characters and
+# frequencies in order of its occurrence
+from collections import Counter
+
+def prCharWithFreq(string):
+
+	# Store all characters and their
+	# frequencies using Counter function
+	d = Counter(string)
+
+	# Print characters and their frequencies in
+	# same order of their appearance
+	for i in d:
+		print(i+str(d[i]), end=" ")
+
+
+string = "geeksforgeeks"
+prCharWithFreq(string)
+
+# This code is contributed by vikkycirus
